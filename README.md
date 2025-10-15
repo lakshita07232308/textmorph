@@ -36,17 +36,18 @@
 4. **Set up API keys:**
    Copy `.env.example` to `.env`
    Add your Hugging Face API key (`HF_API_KEY`) and/or Groq API key (`GROQ_API_KEY`) in `.env`
+   
    Example `.env`:
    ```bash
    HF_API_KEY=hf_your_huggingface_key_here
    GROQ_API_KEY=your_groq_key_here
     
-5. **Run test script:**
+6. **Run test script:**
    Tests summarization and paraphrasing functionality in the console.
    ```bash
    python test_run.py
    
-6. **Run the Streamlit web app:**
+7. **Run the Streamlit web app:**
    ```bash
    streamlit run app.py
    
