@@ -58,7 +58,7 @@
 
 ---
 
-##Technologies Used
+## Technologies Used
 
 - **Python 3.9+**
 - **Streamlit** for the web UI
