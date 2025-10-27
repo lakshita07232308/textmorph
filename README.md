@@ -16,27 +16,6 @@ Built with modular architecture, YAML configuration management, and a custom CSS
 
 ---
 
-## 🛠️ Project Structure
-
-
-textmorph/
-│
-├── mvp/
-│   ├── __init__.py
-│   ├── extractive.py
-│   ├── abstractive.py
-│   ├── paraphraser.py
-│   └── mvp_pipeline.py
-│
-├── config.yaml
-├── config_manager.py
-├── app.py
-├── requirements.txt
-└── .env
-
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
@@ -56,9 +35,10 @@ source .venv/bin/activate # For macOS/Linux
 pip install -r requirements.txt
 ```
 ### 4️⃣ Configure Environment Variables
-Copy `.env.example` to `.env` and add your Hugging Face key:
+Copy `.env.example` to `.env` and add your Hugging Face key and Groq API Key:
 ```bash
 HF_API_KEY=your_huggingface_api_key
+GROQ_API_KEY=your_groq_api_key
 ```
 ### 5️⃣ Run the App
 ```bash
