@@ -1,5 +1,12 @@
+# Virtual environment
 .venv/
 __pycache__/
+
+# Environment files
 .env
-.env.*
+# Allow the example env file to be tracked
+!.env.example
+
+# VS Code settings
 .vscode/
+
