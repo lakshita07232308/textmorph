@@ -59,7 +59,7 @@ streamlit run app.py
 
 ## ⚡ Technologies Used
 
--   🧠 **Transformers** (Hugging Face)
+-   🧠 **Transformers** (Hugging Face and Groq)
 -   🔥 **PyTorch**
 -   🧮 **NLTK & NumPy**
 -   💡 **Streamlit** (Frontend)
