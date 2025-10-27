@@ -1,71 +1,99 @@
-# TextMorph – AI Text Summarizer & Paraphraser
+# 📝 TextMorph — Intelligent Text Summarizer & Paraphraser  
 
-**TextMorph** is a web application that allows users to summarize and paraphrase text using AI-powered models via Hugging Face and Groq APIs. It supports both **extractive** and **abstractive summarization**, and generates **multiple paraphrased versions** of any input text — all without downloading heavy models locally.  
-
----
-
-## Features
-- **Extractive Summarization:** Selects key sentences from the original text.  
-- **Abstractive Summarization:** Generates concise summaries in natural language.  
-- **Paraphrasing:** Produces multiple reworded versions of the input text.  
-- **Web-based UI:** Built with Streamlit for a user-friendly experience.  
-- **API-based:** Uses Hugging Face / Groq APIs; no local models needed.  
-- **Downloadable Outputs:** Save summaries or paraphrased text as `.txt`.  
+An advanced **Streamlit-based NLP application** that performs **Extractive and Abstractive Text Summarization** and **Paraphrasing** using state-of-the-art Transformer models.  
+Built with modular architecture, YAML configuration management, and a custom CSS-enhanced interface.  
 
 ---
 
-## Installation & Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/<your-username>/textmorph.git
-   cd textmorph
-   
-2. **Create and activate a virtual environment:**
-   ```bash
-   python -m venv .venv
-   # Windows (PowerShell)
-   .venv\Scripts\Activate.ps1
-   # macOS/Linux
-   source .venv/bin/activate
-   
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   
-4. **Set up API keys:**
-   Copy `.env.example` to `.env`
-   Add your Hugging Face API key (`HF_API_KEY`) and/or Groq API key (`GROQ_API_KEY`) in `.env`
-   
-   Example `.env`:
-   ```bash
-   HF_API_KEY=hf_your_huggingface_key_here
-   GROQ_API_KEY=your_groq_key_here
-    
-6. **Run test script:**
-   Tests summarization and paraphrasing functionality in the console.
-   ```bash
-   python test_run.py
-   
-7. **Run the Streamlit web app:**
-   ```bash
-   streamlit run app.py
-   
-- Open the URL in your browser.
-- Paste your text.
-- Choose Extractive or Abstractive summarization.
-- Click Summarize or Paraphrase.
-- Download results as `.txt` if needed.
+## 🚀 Features
+- ✨ **Abstractive Summarization** – Generates new phrasing using transformer models  
+- 🧩 **Extractive Summarization** – Selects the most meaningful sentences directly from the text  
+- 🔄 **Paraphrasing** – Creates multiple rewritten versions of your input  
+- ⚙️ **Config-Driven Architecture** – Easily customize models, parameters, and keys in `config.yaml`  
+- 🪵 **Logging & Error Handling** – Manageable and extendable structure for debugging  
+- 🎨 **Styled UI** – Clean Streamlit interface with subtle CSS enhancements  
+- 💾 **Download Output** – Save summaries or paraphrases as `.txt` files  
 
 ---
 
-## Technologies Used
+## 🛠️ Project Structure
 
-- **Python 3.9+**
-- **Streamlit** for the web UI
-- **Hugging Face API** for summarization models
-- **Groq API** for paraphrasing
-- **Requests** for HTTP API calls
-- **dotenv** for environment variable management
-   
-   
+
+textmorph/
+│
+├── mvp/
+│   ├── __init__.py
+│   ├── extractive.py
+│   ├── abstractive.py
+│   ├── paraphraser.py
+│   └── mvp_pipeline.py
+│
+├── config.yaml
+├── config_manager.py
+├── app.py
+├── requirements.txt
+└── .env
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+```bash
+git clone [https://github.com/lakshita07232308/textmorph.git](https://github.com/lakshita07232308/textmorph.git)
+cd textmorph
+```
+### 2️⃣ Create & Activate Virtual Environment
+```bash
+python -m venv .venv
+.venv\Scripts\activate    # For Windows
+# or
+source .venv/bin/activate # For macOS/Linux
+```
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4️⃣ Configure Environment Variables
+Copy `.env.example` to `.env` and add your Hugging Face key:
+```bash
+HF_API_KEY=your_huggingface_api_key
+```
+### 5️⃣ Run the App
+```bash
+streamlit run app.py
+```
+--- 
+
+## 💡 How to Use
+
+1.  Open the local URL shown in your terminal.
+2.  Paste or type the text you want to summarize or paraphrase.
+3.  Choose the **Summarization Method** (Extractive / Abstractive).
+4.  Select **Summary Length** (Short / Medium / Long).
+5.  Click **Summarize** or **Paraphrase**.
+6.  Download your result as `.txt` if needed.
+
+---
+
+## ⚡ Technologies Used
+
+-   🧠 **Transformers** (Hugging Face)
+-   🔥 **PyTorch**
+-   🧮 **NLTK & NumPy**
+-   💡 **Streamlit** (Frontend)
+-   📜 **YAML** Configuration
+-   🧰 **Python-dotenv**
+-   🎨 **Custom CSS** Styling
+
+---
+
+## 👩‍💻 Author
+
+-   **Lakshita Setia**
+-   📧 `lakshita07232308@gmail.com`
+-   🌐 [GitHub Profile](https://github.com/lakshita07232308)
+
+---
+
