@@ -1,24 +1,25 @@
 # test_run.py
 import os
 from dotenv import load_dotenv
+from config_manager import ConfigManager
 from mvp.mvp_pipeline import SummarizationPipeline
 
 load_dotenv()
-hf_api_key = os.getenv("HF_API_KEY")
-if not hf_api_key:
-    print("Please set HF_API_KEY in your .env file")
-    exit()
+cfg = ConfigManager()
 
-pipeline = SummarizationPipeline(hf_api_key)
+HF_API_KEY = os.getenv(cfg.get("api_keys", "huggingface"))
 
-text = "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed."
+pipeline = SummarizationPipeline(HF_API_KEY, cfg)
 
-print("=== Abstractive Summary ===")
-print(pipeline.summarize(text, method='abstractive', length='short'))
+text = "Machine learning is changing the world rapidly."
+
+print("\n=== Abstractive Summary ===")
+print(pipeline.summarize(text, method="abstractive"))
 
 print("\n=== Extractive Summary ===")
-print(pipeline.summarize(text, method='extractive', length='short'))
+print(pipeline.summarize(text, method="extractive"))
 
 print("\n=== Paraphrase ===")
-for i, p in enumerate(pipeline.paraphrase(text), 1):
+paraphrases = pipeline.paraphrase(text)
+for i, p in enumerate(paraphrases, 1):
     print(f"{i}. {p}")

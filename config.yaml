@@ -1,0 +1,27 @@
+# config.yaml
+
+api_keys:
+  huggingface: "HF_API_KEY"
+  groq: "GROQ_API_KEY"
+
+models:
+  abstractive: "facebook/bart-large-cnn"
+  extractive: "facebook/bart-large-cnn"
+  paraphraser: "llama-3.1-8b-instant"
+
+summarization:
+  lengths:
+    short:
+      max_length: 60
+      min_length: 30
+    medium:
+      max_length: 130
+      min_length: 60
+    long:
+      max_length: 200
+      min_length: 130
+
+paraphrasing:
+  num_return_sequences: 3
+  temperature: 0.9
+  max_tokens: 400
