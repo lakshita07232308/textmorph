@@ -1,4 +1,4 @@
-# 📝 TextMorph — Intelligent Text Summarizer & Paraphraser  
+# 📝 TextMorph — Text Summarizer & Paraphraser  
 
 An advanced **Streamlit-based NLP application** that performs **Extractive and Abstractive Text Summarization** and **Paraphrasing** using state-of-the-art Transformer models.  
 Built with modular architecture, YAML configuration management, and a custom CSS-enhanced interface.  
