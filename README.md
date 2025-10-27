@@ -59,13 +59,14 @@ streamlit run app.py
 
 ## ⚡ Technologies Used
 
--   🧠 **Transformers** (Hugging Face and Groq)
--   🔥 **PyTorch**
--   🧮 **NLTK & NumPy**
--   💡 **Streamlit** (Frontend)
--   📜 **YAML** Configuration
--   🧰 **Python-dotenv**
--   🎨 **Custom CSS** Styling
+-   🧠 **Transformers (Hugging Face)** for extractive and abstractive text summarization
+-   ⚙️ **Groq API** for high-speed paraphrasing using large language models
+-   🔥 **PyTorch** used for deep learning computations and transformer model support
+-   🧮 **NLTK & NumPy** for text preprocessing, tokenization, and numerical operations
+-   💡 **Streamlit** (Frontend) for building the interactive web-based frontend
+-   📜 **YAML** Configuration for managing configuration parameters in a structured format
+-   🧰 **Python-dotenv** for securely loading environment variables and API keys
+-   🎨 **Custom CSS** for enhancing the UI design and improving user experience
 
 ---
 
