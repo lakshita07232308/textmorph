@@ -72,7 +72,7 @@ streamlit run app.py
 ## 👩‍💻 Author
 
 -   **Lakshita Setia**
--   📧 `lakshita07232308@gmail.com`
+-   📧 `lakshita833@gmail.com`
 -   🌐 [GitHub Profile](https://github.com/lakshita07232308)
 
 ---
